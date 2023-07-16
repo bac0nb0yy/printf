@@ -6,7 +6,7 @@
 /*   By: dtelnov <dtelnov@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/04 04:46:41 by dtelnov           #+#    #+#             */
-/*   Updated: 2023/06/25 04:35:02 by dtelnov          ###   ########.fr       */
+/*   Updated: 2023/07/16 22:56:52 by dtelnov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,6 @@ int	ft_uintlen(unsigned int number, int base)
 	int				len;
 
 	len = !number;
-	if (number < 0)
-		++len;
 	while (number)
 	{
 		number /= base;
@@ -49,8 +47,6 @@ int	ft_ullen(unsigned long number, int base)
 	if (!number)
 		return (5);
 	len = !number;
-	if (number < 0)
-		++len;
 	while (number)
 	{
 		number /= base;

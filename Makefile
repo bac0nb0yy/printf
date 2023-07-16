@@ -6,7 +6,7 @@
 #    By: dtelnov <dtelnov@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/24 04:45:01 by dtelnov           #+#    #+#              #
-#    Updated: 2023/06/25 04:10:49 by dtelnov          ###   ########.fr        #
+#    Updated: 2023/07/16 22:57:11 by dtelnov          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -60,7 +60,7 @@ $(NAME): $(OBJS)
 	@echo "\n\n[🔘] $(BGREEN)Compiling $(PROJECT_NAME)..."
 	@$(AR) $(NAME) $^
 	@echo "$(NC)"
-	@printf "$(BBLACK)[%2d/%2d] 100%%\t$(BWHITE)All files have been compiled ✔️$(NC)\n" $(COUNT) $(TOTAL)
+	@printf "$(BBLACK)[%1d/%1d] 100%%\t$(BWHITE)All files have been compiled ✔️$(NC)\n" $(COUNT) $(TOTAL)
 	@echo "[💠] $(BBLACK)$(NAME)\t$(BWHITE)Library created ✔️\n$(NC)"
 
 %.o: %.c
